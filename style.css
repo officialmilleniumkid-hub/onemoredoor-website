@@ -1,0 +1,20 @@
+:root{--bg:#120820;--fg:#f4e9d0;--mut:#b9a9c9;--acc:#e8b84a;--line:rgba(244,233,208,.22)}
+*{box-sizing:border-box}
+html{background:var(--bg)}
+body{margin:0;min-height:100vh;color:var(--fg);font:17px/1.65 "Courier New",ui-monospace,monospace;
+ background:radial-gradient(ellipse at 50% -10%,#4a1d6e 0,#1a0a2a 55%,#0b0414 100%) fixed}
+main{max-width:720px;margin:0 auto;padding:28px 20px 80px}
+nav{display:flex;gap:18px;flex-wrap:wrap;align-items:center;font-size:14px;letter-spacing:.12em;margin-bottom:56px}
+nav a{color:var(--mut);text-decoration:none}nav a:hover,nav a.on{color:var(--fg)}
+nav .sp{flex:1}
+#lang{background:none;border:1px solid var(--line);color:var(--fg);font:inherit;font-size:13px;letter-spacing:.12em;padding:4px 10px;cursor:pointer}
+h1{font-size:clamp(30px,8vw,52px);letter-spacing:.14em;margin:0 0 6px;line-height:1.15}
+h2{font-size:15px;letter-spacing:.2em;color:var(--acc);margin:44px 0 10px;font-weight:600}
+.sub{color:var(--mut);margin:0 0 30px}
+p,li{margin:.6em 0}ul{padding-left:1.2em}
+a{color:var(--acc)}
+.door{width:70px;height:112px;margin:34px 0;border:3px solid #2a1608;background:#7a4a24;position:relative;box-shadow:0 0 40px rgba(255,200,110,.45)}
+.door:after{content:"";position:absolute;right:10px;top:54px;width:9px;height:9px;border-radius:50%;background:var(--acc)}
+.box{border:1px solid var(--line);padding:14px 18px;margin:18px 0;background:rgba(0,0,0,.25)}
+footer{margin-top:70px;color:var(--mut);font-size:13px;border-top:1px solid var(--line);padding-top:16px}
+[data-l]{display:none}html[lang=de] [data-l=de],html[lang=en] [data-l=en]{display:revert}
